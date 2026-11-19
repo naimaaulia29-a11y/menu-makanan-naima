@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naimaro Eatery</title>
+    <link rel="stylesheet" href="/css/style.css">
+<script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h2>Naimaro <span>Eatery</span></h2>
+            <ul>
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#kontak">kontak</a></li>
+            </ul>
+            <button id="darkMode">Mode Gelap</button>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Selamat Datang di Naimaro Eatery</h1>
+        <p>Nikmati berbagai pilihan makanan dan minuman favoritmu.</p>
+        <a href="#menu" class="tombol">Lihat Menu</a>  
+    </section>
+
+    <section id="menu">
+        <h2>Menu Makanan Kami</h2>
+
+        <div class="menu-container">
+
+            <div class="menu-card">
+                <img src="image/Cah kangkung cumi.jpg">
+                <h3>cah kangkung cumi</h3>
+                <p>Rp20.000</p>
+                <button onclick="pesan('cah kangkung cumi', 20000)">Pesan</button>
+            </div>
+
+            <div class="menu-card">
+                <img src="image/Cumi Goreng Tepung.jpg">
+                <h3>cumi goreng tepung</h3>
+                <p>Rp35.000</p>
+                <button onclick="pesan('cumi goreng tepung', 35000)">Pesan</button>
+            </div>
+
+            <div class="menu-card">
+                <img src="image/Es Buah.jpg">
+                <h3>Es Buah</h3>
+                <p>Rp10.000</p>
+                <button onclick="pesan('Es Buah', 10000)">Pesan</button>
+            </div>
+
+            <div class="menu-card">
+                <img src="image/Nasi goreng.jpg">
+                <h3>Nasi goreng</h3>
+                <p>Rp18.000</p>
+                <button onclick="pesan('Nasi goreng', 18000)">Pesan</button>
+            </div>
+
+            <div class="menu-card">
+                <img src="image/Gorengan.jpg">
+                <h3>Gorengan</h3>
+                <p>Rp15.000</p>
+                <button onclick="pesan('Gorengan', 15000)">Pesan</button>
+            </div>
+
+            <div class="menu-card">
+                <img src="image/Mie Ayam.jpg">
+                <h3>Mie Ayam</h3>
+                <p>Rp16.000</p>
+                <button onclick="pesan('Mie Ayam', 16000)">Pesan</button>
+            </div>
+
+            <div class="menu-card">
+                <img src="image/Sate Ayam.jpg">
+                <h3>Sate Ayam</h3>
+                <p>Rp16.000</p>
+                <button onclick="pesan('Sate Ayam', 16000)">Pesan</button>
+            </div>
+
+
+            <div class="menu-card">
+                <img src="image/Sup Konro.jpg">
+                <h3>Sup Konro</h3>
+                <p>Rp16.000</p>
+                <button onclick="pesan('Sup Konro', 16000)">Pesan</button>
+            </div>
+
+            <div class="menu-card">
+                <img src="image/Otak-Otak goreng.jpg">
+                <h3>Otak-Otak goreng</h3>
+                <p>Rp16.000</p>
+                <button onclick="pesan('Otak-Otak goreng', 16000)">Pesan</button>
+            </div>
+
+            <div class="menu-card">
+                <img src="image/Jalangkote.jpg">
+                <h3>Jalangkote</h3>
+                <p>Rp5.000</p>
+                <button onclick="pesan('Jalangkote', 5000)">Pesan</button>
+            </div> 
+            
+            <div class="menu-card">
+                <img src="image/download (14).jpg">
+                <h3>Kopi</h3>
+                <p>Rp5.000</p>
+                <button onclick="pesan('Jalangkote', 5000)">Pesan</button>
+            </div>
+
+            <div class="menu-card">
+                <img src="image/Minang-Style Chicken Gulai.jpg">
+                <h3>Gulai Ayam</h3>
+                <p>Rp35.000</p>
+                <button onclick="pesan('Jalangkote', 35000)">Pesan</button>
+            </div>
+
+            <div class="menu-card">
+                <img src="image/download (9).jpg">
+                <h3>Ceker Pedas</h3>
+                <p>Rp12.000</p>
+                <button onclick="pesan('Jalangkote', 12000)">Pesan</button>
+            </div>
+
+            <div class="menu-card">
+                <img src="image/Le Mineral 600 ml _ Minuman Botol Tanggung _ Per Botol.jpg">
+                <h3>Le Mineral</h3>
+                <p>Rp5.000</p>
+                <button onclick="pesan('Le Mineral', 5000)">Pesan</button>
+            </div>
+
+            <div class="menu-card">
+                <img src="image/download (8).jpg">
+                <h3>Nasi Kotak</h3>
+                <p>Rp10.000</p>
+                <button onclick="pesan('Nasi Kotak', 10000)">Pesan</button>
+            </div>
+
+             <div class="menu-card">
+                <img src="image/Video _ Ikan Goreng Sederhana Resep Menu Sederhana Tapi Enak.jpg">
+                <h3>Ikan Goreng</h3>
+                <p>Rp17.000</p>
+                <button onclick="pesan('IKan Goreng', 17000)">Pesan</button>
+            </div>
+
+             <div class="menu-card">
+                <img src="image/Resep Olahan Telur_ 7 Mudah dan Lezat untuk Santapan Sehari-hari.jpg">
+                <h3>Telur Ceplok</h3>
+                <p>Rp12.000</p>
+                <button onclick="pesan('Telur Ceplok', 12000)">Pesan</button>
+            </div>
+
+             <div class="menu-card">
+                <img src="image/Resep Telur Bumbu Merah dari @ketutarsini.jpg">
+                <h3>Telur Balado</h3>
+                <p>Rp12.000</p>
+                <button onclick="pesan('Telur Balado', 12000)">Pesan</button>
+            </div>
+
+             <div class="menu-card">
+                <img src="image/Indonesian Food Recipes _ BEEF RENDANG _ Facebook.jpg">
+                <h3>Rendang</h3>
+                <p>Rp25.000</p>
+                <button onclick="pesan('Rendang', 25000)">Pesan</button>
+            </div>
+
+             <div class="menu-card">
+                <img src="image/Resep Ayam Taliwang Bakar Teflon dari @yscooking.jpg">
+                <h3>Ayam Bakar Utuh</h3>
+                <p>Rp70.000</p>
+                <button onclick="pesan('Ayam Bakar Utuh', 70000)">Pesan</button>
+            </div>
+
+             <div class="menu-card">
+                <img src="image/Kapurung mama kembar.jpg">
+                <h3>Kapurung Baliase</h3>
+                <p>Rp12.000</p>
+                <button onclick="pesan('Kapurung Baliase', 12000)">Pesan</button>
+            </div>
+
+             <div class="menu-card">
+                <img src="image/Es Pisang Hiijau.jpg">
+                <h3>Es Pisang Hijau</h3>
+                <p>Rp6.000</p>
+                <button onclick="pesan('Es Pisang Hijau', 5000)">Pesan</button>
+            </div>
+
+            <div class="menu-card">
+                <img src="image/Gado Gado Served on Banana Leaf.jpg">
+                <h3>Gado-Gado</h3>
+                <p>Rp10.000</p>
+                <button onclick="pesan('Gado-Gado', 10000)">Pesan</button>
+            </div>
+            
+            <div class="menu-card">
+                <img src="image/download (10).jpg">
+                <h3>Pempek</h3>
+                <p>Rp10.000</p>
+                <button onclick="pesan('Pempek', 10000)">Pesan</button>
+            </div>
+
+            
+            <div class="menu-card">
+                <img src="image/download (5).jpg">
+                <h3>Sup Ayam</h3>
+                <p>Rp15.000</p>
+                <button onclick="pesan('Sup Ayam', 15000)">Pesan</button>
+            </div>
+            
+            <div class="menu-card">
+                <img src="image/download (13).jpg">
+                <h3>Es Jeruk</h3>
+                <p>Rp5.000</p>
+                <button onclick="pesan('Es Jeruk', 5000)">Pesan</button>
+            </div>
+
+            <div class="menu-card">
+                <img src="image/Donna Jos Sia.jpg">
+                <h3>Sayur Asam</h3>
+                <p>Rp10.000</p>
+                <button onclick="pesan('Sayur Asam', 10000)">Pesan</button>
+            </div>
+
+            <div class="menu-card">
+                <img src="image/coto makassar.jpg">
+                <h3>Coto Makassar</h3>
+                <p>Rp35.000</p>
+                <button onclick="pesan('Coto Makassar', 35000)">Pesan</button>
+            </div>
+
+            <div class="menu-card">
+                <img src="image/10 List of Betawi Foods You Must Try _ Flokq.jpg">
+                <h3>Soto Betawi</h3>
+                <p>Rp25.000</p>
+                <button onclick="pesan('Soto Betawi', 25000)">Pesan</button>
+            </div>
+
+             <div class="menu-card">
+                <img src="image/Putu cake.jpg">
+                <h3>Kue Putu</h3>
+                <p>Rp3.000</p>
+                <button onclick="pesan('Kue Putu', 3000)">Pesan</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="pesanan">
+        <h2>Daftar Pesanan</h2>
+        <ul id="daftarpesanan"></ul>
+        <h3>Total: <span id="total">Rp0</span></h3>
+        <button onclick="konfirmasi()">Konfirmasi Pesanan</button> 
+        <button onclick="hapusPesanan()">Hapus pesanan</button>
+    </section>
+
+    <section id="tentang">
+        <h2>Tentang Naimaro Eatery</h2>
+        <p>
+            Naimaro Eatery merupakan website menu makanan
+            yang menyediakan berbagai pilihan makanan dan minuman.
+            Kami hadir untuk memberikan pengalaman memilih
+            hidangan dengan mudah dan menyenangkan.
+         </p>
+    </section>
+
+    <section id="kontak">
+        <h2>Hubungi Kami</h2>
+        <p>terima Kasih telah mengunjungi Naimaro Eatery.</p>
+        <p>Email:  naimaro@example.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Naimaro Eatery. All Rights Reserver.</p>
+    </footer>
+    
+</body>
+</html> 

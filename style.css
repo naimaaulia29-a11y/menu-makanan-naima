@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFF5E9;
+    color: #713F32;
+}
+
+header {
+    background-color: #FFF5E9;
+    padding: 20 px;
+    box-shadow: 0 2px 8px #00000015;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.navbar h2 span {
+    color: #C96F50;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #713F32;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #C96F50;
+}
+
+button, .tombol {
+    background-color: #C96F50;
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button:hover, .tombol:hover {
+    background-color: #9F503B;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #E9BFA5;
+}
+
+.hero h1 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+}
+
+section {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 30px;
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.menu-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 3px 10px #00000015;
+    transition: 0.3s;
+}
+
+.menu-card:hover {
+    transform: translateY(-5px);
+}
+
+.menu-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.menu-card h3 {
+    margin: 15px 0 8px;
+}
+
+.menu-card p {
+    margin-bottom: 15px;
+    color: #C96F50;
+    font-weight: bold;
+}
+
+#pesanan ul {
+    list-style: none;
+    margin: 20px 0;
+}
+
+#pesanan li {
+    margin: 10px;
+}
+
+#tentang p, #kontak p {
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+footer {
+    background-color: #713F32;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.dark {
+    background-color: #292323;
+    color: #FFF5E9;
+}
+
+.dark header, .dark .menu-card {
+    background-color: #403333;
+    color: white;
+}
+
+.dark .navbar a {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .menu-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .navbar {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .menu-container {
+        grid-template-columns: 1ft;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 27px;
+    }
+}
